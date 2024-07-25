@@ -11,11 +11,11 @@ This is a simple personal blog application where users can create and view blog 
 
 ## Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshot]<img src=assets/image/screenshot.png>
 
 ## Deployed Application
 
-[Link to the deployed application](https://your-deployed-app-link.com)
+[Link to the deployed application](https://jcjohncarter3.github.io/04-personal-blog/)
 
 ## Technologies Used
 
