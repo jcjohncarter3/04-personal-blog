@@ -1,15 +1,19 @@
 #blog-posts {
-    max-width: 600px;
-    margin: 2em auto;
-    padding: 1em;
-    background-color: #f8f9fa;
-  }
-  
-  .blog-post {
-    border-bottom: 1px solid #ddd;
-    padding: 1em 0;
-  }
-  
-  .blog-post:last-child {
-    border-bottom: none;
-  }
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #f8f9fa;
+}
+
+.blog-post {
+  border-bottom: 1px solid #ddd;
+  padding: 1em 0;
+}
+
+.dark-mode #blog-posts {
+  background-color: #000;
+} 
+
+.blog-post:last-child {
+  border-bottom: none;
+}

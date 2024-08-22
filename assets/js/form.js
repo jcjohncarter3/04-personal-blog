@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
-    const blogPostsContainer = document.getElementById('blog-posts');
-  
+  const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
+  const blogPostsContainer = document.getElementById('blog-posts');
+
+  if (blogPostsContainer) {
     blogPosts.forEach(post => {
       const postElement = document.createElement('div');
       postElement.className = 'blog-post';
@@ -12,9 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
       blogPostsContainer.appendChild(postElement);
     });
-  
-    const modeToggle = document.getElementById('mode-toggle');
-    modeToggle.addEventListener('click', function () {
-        document.body.classList.toggle('dark-mode');
-      });
+  }
+
+  const modeToggle = document.getElementById('mode-toggle');
+  modeToggle.addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
   });
+});
